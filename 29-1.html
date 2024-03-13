@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Lãi Suất</title>
+</head>
+<body>
+  <input type="text" id="s1">
+  <input type="text" id="s2"><br>
+  <button onclick="nhan()">nhan</button>
+  <button onclick="chia()">chia</button>
+  <button onclick="cong()">cong</button>
+  <button onclick="tru()">tru</button>
+  <h1 id="kq"></h1>
+  <script>
+    function cong(){
+        let a = +document.getElementById("s1").value;
+        let b = +document.getElementById("s2").value;
+        document.getElementById("kq").innerHTML= a+b  }
+        function chia(){
+        let a = +document.getElementById("s1").value;
+        let b = +document.getElementById("s2").value;
+        document.getElementById("kq").innerHTML= a/b  }
+        function tru(){
+        let a = +document.getElementById("s1").value;
+        let b = +document.getElementById("s2").value;
+        document.getElementById("kq").innerHTML= a-b  }
+        function nhan(){
+        let a = +document.getElementById("s1").value;
+        let b = +document.getElementById("s2").value;
+        document.getElementById("kq").innerHTML= a*b  }
+
+  </script>
+</body>
+</html>
+
+</body>
+</html>

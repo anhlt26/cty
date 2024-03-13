@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <script> /// bài toán tìm các phương án và cachs tìm ít nhất
+    let S= 20;
+    let n=0;
+    let c=[];
+    for(let x=0;x<=20;x++){
+        for(let y=0;y<=10;y++){
+            for(let z=0;z<=4;z++){
+                if((x+2*y+5*z)==S){
+                n+=1;
+                let total= x+y+z;
+                c.push(total);
+                document.write(x+"Tờ 1000, "+y+"tờ 2000, "+z+"Tờ 5000."+"   tổng số tờ"+c+"<br>");
+                }
+            }
+        }
+    }document.write("Số cách tạo ra 20000 là:  " + n);
+    document.write("tổng số các tờ:  "+ c);
+    let m=Math.min(c);
+    document.write("cách tạo ít tiền nhất là:  "+c)
+    </script>
+-->
+<script> /// tạo 3 số từ abc khác không và không trùng nhau
+let a = +prompt("Nhập số a:  ");
+let b = +prompt("Nhập số b:  ");
+let c = +prompt("Nhập số c:  ");
+if (
+    a!==0&&a!==b&&a!==c&&
+    b!==0&&b!==c&&c!==0
+){
+    document.write("được tiếp đi");
+}
+</script>
+</body>
+</html>

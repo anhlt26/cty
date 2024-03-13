@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> // bai tap ran n so nem, moi lan ran duoc 9 cai, hoi phai ran bao nhieu lan với n nem
+        let n = +prompt("nhập vào số nem cần rán");
+        let a = 1;
+        for(let i=n;i>=9;i=i-9){
+            a+=1
+        }
+        document.write(a)
+    </script> 
+    <script> // nhạp vào xy, lay cặp xy còn thừa thì gep căp xx or yy
+        let x = +prompt("nhap vao so nam")
+        let y = +prompt("nhap vao so nu")
+        if(x>=1&&y<=100){
+            if (x>=y){
+            let a = Math.floor((x-y)/2);
+            document.write("số cặp khác giơi là:"+y);
+            document.write("<br>");
+            document.write("số cặp cùng giới là:"+a);
+            }
+            if(x<y){
+            let a = Math.floor((y-x)/2);
+            document.write("số cặp khác giơi là:"+x);
+            document.write("<br>");
+            document.write("số cặp cùng giới là:"+a);
+            }
+        } else{
+            document.write("ít nam or nhiều nữ rồi chịu không tính được")
+        }
+    </script>
+    <script> // nhạp vào a b, in ra các số chính phương từ a tới b ( chưa xong)
+    let a = +prompt("nhạp vào a");
+    let b = +prompt("nhạp vào b");
+        for(let r=math.sqrt(a,2);(r%1==0)&&(a<=b);r++){
+                document.write(r);
+                document.write("<br>");
+        }
+    </script>
+    <script>
+        let N =+prompt("Nhập N:")
+        let S =+prompt("Nhập S:")
+        for(let x =0;x<=N;x++){
+        for(let y =0;y<=N;y++){
+        for(let z =0;z<=N;z++){
+            if ( x+y+z ==2){
+                document.write(x+","+y+","+z+"<br>")
+            }}}
+        }
+    </script>
+</body>
+</html>
